@@ -7,6 +7,11 @@ spring:
     url: jdbc:mysql://localhost:3306/property_management_platform?useSSL=false&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis:
-  mapper-locations: classpath:backend/com/pmp/mapper/*.xml
+  mapper-locations: classpath:com/pmp/mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
+logging:
+  level:
+    com:
+      pmp:
+        mapper: debug
